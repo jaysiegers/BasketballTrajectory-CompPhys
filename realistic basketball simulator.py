@@ -283,9 +283,7 @@ while True:
         # If basketball hits rim1
         if overlap_rim1:
             # Calculating the hit angle using pythagorean theorem, returns radians
-            # a = (1080-heightperframe)-(1080-rim1_rect[1])
             a = rim1_rect[1] - heightperframe
-            # b = (1920-distanceperframe)-(1920-rim1_rect[0])
             b = rim1_rect[0] - distanceperframe
             c = math.sqrt((math.pow(a,2))+(math.pow(b,2)))
             angle = math.asin(a/c)
@@ -313,8 +311,6 @@ while True:
         # If basketball hits rim2
         elif overlap_rim2:
             # Calculating the hit angle using pythagorean theorem, returns radians
-            # a = (1080-heightperframe)-(1080-rim2_rect[1])
-            # b = (1920-distanceperframe)-(1920-rim2_rect[0])
             a = rim2_rect[1] - heightperframe
             b = rim2_rect[0] - distanceperframe
             c = math.sqrt((math.pow(a,2))+(math.pow(b,2)))
