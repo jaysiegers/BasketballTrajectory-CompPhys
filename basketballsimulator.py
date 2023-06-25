@@ -16,8 +16,8 @@ over = False
 font = pygame.font.Font(None, 32)
 
 g = 9.8
-res = 0.86
-backboard_res = 0.65
+res = 0.82
+backboard_res = 0.6
 rim_res = 0.6
 
 attempts = 0
